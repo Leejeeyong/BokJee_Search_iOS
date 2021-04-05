@@ -15,6 +15,7 @@
 		3241938A260F92CD001E5AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32419388260F92CD001E5AB4 /* LaunchScreen.storyboard */; };
 		32419395260F92CD001E5AB4 /* BokjeeSearchiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32419394260F92CD001E5AB4 /* BokjeeSearchiOSTests.swift */; };
 		324193A0260F92CD001E5AB4 /* BokjeeSearchiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3241939F260F92CD001E5AB4 /* BokjeeSearchiOSUITests.swift */; };
+		324193B1261AA175001E5AB4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324193B0261AA175001E5AB4 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3241939B260F92CD001E5AB4 /* BokjeeSearchiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BokjeeSearchiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3241939F260F92CD001E5AB4 /* BokjeeSearchiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokjeeSearchiOSUITests.swift; sourceTree = "<group>"; };
 		324193A1260F92CD001E5AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324193B0261AA175001E5AB4 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				32419386260F92CD001E5AB4 /* Assets.xcassets */,
 				32419388260F92CD001E5AB4 /* LaunchScreen.storyboard */,
 				3241938B260F92CD001E5AB4 /* Info.plist */,
+				324193B0261AA175001E5AB4 /* WebViewController.swift */,
 			);
 			path = BokjeeSearchiOS;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				32419382260F92CC001E5AB4 /* ViewController.swift in Sources */,
 				3241937E260F92CC001E5AB4 /* AppDelegate.swift in Sources */,
 				32419380260F92CC001E5AB4 /* SceneDelegate.swift in Sources */,
+				324193B1261AA175001E5AB4 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
