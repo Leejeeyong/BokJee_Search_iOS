@@ -25,6 +25,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4j-Yh-tHE">
                                 <rect key="frame" x="100" y="432" width="30" height="30"/>
                                 <state key="normal" title="맞춤"/>
+                                <connections>
+                                    <action selector="TargetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="84c-Bm-9sw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGB-Ki-V8a">
                                 <rect key="frame" x="284" y="432" width="30" height="30"/>
