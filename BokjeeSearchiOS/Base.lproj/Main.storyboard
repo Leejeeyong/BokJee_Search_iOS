@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hfI-Uj-tL3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hfI-Uj-tL3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,38 +16,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="복지서치" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujp-Ub-k2t">
-                                <rect key="frame" x="100" y="144" width="214" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="IRR-nZ-ni1">
+                                <rect key="frame" x="50" y="144" width="314" height="418"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="복지포털" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5N-m7-HaK">
+                                <rect key="frame" x="100" y="161" width="214" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4j-Yh-tHE">
-                                <rect key="frame" x="100" y="432" width="30" height="30"/>
-                                <state key="normal" title="맞춤"/>
+                                <rect key="frame" x="100" y="291.5" width="50" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="agK-JT-y2I"/>
+                                    <constraint firstAttribute="width" constant="50" id="eZh-dG-TZe"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" backgroundImage="person.fill" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGB-Ki-V8a">
-                                <rect key="frame" x="284" y="432" width="30" height="30"/>
-                                <state key="normal" title="홈"/>
+                                <rect key="frame" x="264" y="290" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="E8u-dP-ytC"/>
+                                    <constraint firstAttribute="width" constant="50" id="lfu-lg-9jg"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" backgroundImage="homekit" catalog="system"/>
                                 <connections>
                                     <action selector="HomeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0S-cs-S3l"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64o-9R-aw4">
+                                <rect key="frame" x="264" y="342" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9Wk-t0-KnW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맞춤" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIL-Og-IRf">
+                                <rect key="frame" x="100" y="342" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KkL-en-BYr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="l4j-Yh-tHE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="43y-uQ-pnm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l4j-Yh-tHE" secondAttribute="bottom" constant="400" id="K9R-Nr-106"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGB-Ki-V8a" secondAttribute="trailing" constant="100" id="Uwf-aX-sqJ"/>
-                            <constraint firstItem="Ujp-Ub-k2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="WWm-aK-afj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ujp-Ub-k2t" secondAttribute="trailing" constant="100" id="Xd3-n6-hph"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bGB-Ki-V8a" secondAttribute="bottom" constant="400" id="mKH-pX-VaB"/>
-                            <constraint firstItem="Ujp-Ub-k2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="rGu-tE-OdT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IRR-nZ-ni1" secondAttribute="bottom" constant="300" id="59T-W0-eVA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E5N-m7-HaK" secondAttribute="trailing" constant="100" id="70B-JX-MzF"/>
+                            <constraint firstItem="bGB-Ki-V8a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="246" id="7pA-4P-PlP"/>
+                            <constraint firstItem="l4j-Yh-tHE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="869-nz-flj"/>
+                            <constraint firstItem="IRR-nZ-ni1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8qy-Y1-CYG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="64o-9R-aw4" secondAttribute="trailing" constant="100" id="9ZP-Hi-jXX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGB-Ki-V8a" secondAttribute="trailing" constant="100" id="Dse-E0-CPG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IRR-nZ-ni1" secondAttribute="trailing" constant="50" id="HL3-aN-iM5"/>
+                            <constraint firstItem="E5N-m7-HaK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="LbT-yA-Hlu"/>
+                            <constraint firstItem="l4j-Yh-tHE" firstAttribute="top" secondItem="E5N-m7-HaK" secondAttribute="bottom" constant="93" id="SZl-bI-ZSc"/>
+                            <constraint firstItem="IRR-nZ-ni1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Zfq-5p-PtP"/>
+                            <constraint firstItem="64o-9R-aw4" firstAttribute="top" secondItem="bGB-Ki-V8a" secondAttribute="bottom" constant="2" id="Zte-36-0gQ"/>
+                            <constraint firstItem="E5N-m7-HaK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="c3B-rg-KYb"/>
+                            <constraint firstItem="mIL-Og-IRf" firstAttribute="top" secondItem="l4j-Yh-tHE" secondAttribute="bottom" constant="2" id="nTv-8S-x6R"/>
+                            <constraint firstItem="mIL-Og-IRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="rLc-6h-zYf"/>
+                            <constraint firstItem="bGB-Ki-V8a" firstAttribute="top" secondItem="l4j-Yh-tHE" secondAttribute="top" id="tQP-HX-PGb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XV1-Fa-icT"/>
                     <connections>
+                        <outlet property="mainBox" destination="IRR-nZ-ni1" id="DFc-w2-yNh"/>
                         <segue destination="dCA-oy-kjK" kind="show" identifier="showWebviewPage" id="nW4-fT-QBc"/>
                     </connections>
                 </viewController>
@@ -109,6 +150,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="168" height="252"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

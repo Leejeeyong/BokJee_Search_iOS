@@ -14,11 +14,11 @@ class WebViewController : UIViewController, WKUIDelegate, WKNavigationDelegate{
     var url:URL?
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        url = URL(string: "https://google.com/")
+//        url = URL(string: "https://google.com/")    //http://localhost:8080/index#
+        url = URL(string: "http://localhost:8080/")
         
         //웹뷰 로드
         let request = URLRequest(url: url!)
@@ -32,9 +32,8 @@ class WebViewController : UIViewController, WKUIDelegate, WKNavigationDelegate{
         self.activityIndicator.removeFromSuperview()
     }
     
-    
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-
+        
         if navigationAction.navigationType == .linkActivated {
                     guard let url = navigationAction.request.url else {
                         decisionHandler(.allow)
@@ -44,7 +43,11 @@ class WebViewController : UIViewController, WKUIDelegate, WKNavigationDelegate{
                     let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
                     if components?.scheme == "http" || components?.scheme == "https"
                     {
-                        UIApplication.shared.open(url)
+//                        UIApplication.shared.open(url)
+                        
+                        let req = URLRequest(url: url)
+                        self.WebView.load(req)
+                        
                         decisionHandler(.cancel)
                     } else {
                         decisionHandler(.allow)
@@ -64,9 +67,5 @@ class WebViewController : UIViewController, WKUIDelegate, WKNavigationDelegate{
         self.view.addSubview(activityIndicator)
         
     }
-    
-    
-    
-    
     
 }
