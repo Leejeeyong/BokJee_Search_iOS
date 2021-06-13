@@ -26,6 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4j-Yh-tHE">
+<<<<<<< HEAD
                                 <rect key="frame" x="100" y="291.5" width="50" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="agK-JT-y2I"/>
@@ -33,6 +34,13 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" backgroundImage="person.fill" catalog="system"/>
+=======
+                                <rect key="frame" x="100" y="432" width="30" height="30"/>
+                                <state key="normal" title="맞춤"/>
+                                <connections>
+                                    <action selector="TargetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="84c-Bm-9sw"/>
+                                </connections>
+>>>>>>> dfaa1dad992c4a19cb1ef1bbe79d53c256611074
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGB-Ki-V8a">
                                 <rect key="frame" x="264" y="290" width="50" height="50"/>
